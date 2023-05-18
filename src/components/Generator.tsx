@@ -237,7 +237,7 @@ export default () => {
             ref={inputRef!}
             disabled={systemRoleEditing()}
             onKeyDown={handleKeydown}
-            placeholder="Enter something..."
+            placeholder="输入问题..."
             autocomplete="off"
             autofocus
             onInput={() => {
@@ -247,9 +247,7 @@ export default () => {
             rows="1"
             class="gen-textarea"
           />
-          <button onClick={handleButtonClick} disabled={systemRoleEditing()} gen-slate-btn>
-            Send
-          </button>
+          <button onClick={handleButtonClick} disabled={systemRoleEditing()} gen-slate-btn>Send</button>
           <button title="Clear" onClick={clear} disabled={systemRoleEditing()} gen-slate-btn>
             <IconClear />
           </button>
